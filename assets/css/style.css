@@ -1,0 +1,765 @@
+/*
+ Table Of Contents
+
+ 1.)  Global Typography
+ 2.)  Homepage
+ 3.)  Hemorrhoids
+ ===============================================*/
+/*
+ 1.)  Global Typography
+ ----------------------------------------*/
+
+body {
+	font-size: 14px;
+	font-family: 'Didact Gothic', sans-serif;
+	font-weight: 400;
+	color: #000000;
+	background-color: #f4f4f4;
+}
+
+a:focus, button:focus {
+	outline: none;
+}
+
+.form-control::-webkit-input-placeholder {
+	color: #232323;
+	opacity: 1;
+}
+
+.form-control::-moz-placeholder {
+	color: #232323;
+	opacity: 1;
+}
+
+.form-control:-ms-input-placeholder {
+	color: #232323;
+	opacity: 1;
+}
+
+.form-control::-ms-input-placeholder {
+	color: #232323;
+	opacity: 1;
+}
+
+.form-control::placeholder {
+	color: #232323;
+	opacity: 1;
+}
+
+.form-control:focus {
+	box-shadow: none;
+}
+.d-table {
+	display: table;
+}
+.d-table-cell {
+	display: table-cell;
+}
+ul {
+	padding: 0;
+	list-style: none;
+}
+/*
+ 1.2) Global Headings
+ -----------------------------*/
+h1, h2, h3, h4, h5, h6 {
+	font-weight: normal;
+}
+h1 {
+	font-size: 18px;
+	color: #fff;
+}
+h2 {
+	font-size: 18px;
+	color: #000;
+}
+
+/*
+ 1.3) Sprite Icons
+ -------------------------*/
+[class^="icon-"], [class*="icon-"] {
+	background-image: url(../images/sprite.png);
+	background-position: 0px 0px;
+	background-repeat: no-repeat;
+	display: inline-block;
+	height: 48px;
+	width: 48px;
+	border: none;
+	vertical-align: middle;
+}
+
+/* 1.4) Button Styles
+ -------------------------*/
+.btn {
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-ms-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+	text-align: center;
+	border: 1px solid transparent;
+	display: inline-block;
+	text-align: center;
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	border-radius: 0;
+}
+.btn:focus {
+	box-shadow: none;
+}
+.btn:not(:disabled):not(.disabled):active:focus {
+	box-shadow: none;
+}
+.btn-default {
+	background-color: #fff;
+	color: #058b8c;
+	border: 2px solid #058b8c;
+}
+.btn-default:hover, .btn-default:not(:disabled):not(.disabled):active:focus, .btn-default:not(:disabled):not(.disabled):active {
+	color: #fff;
+	background-color: #058b8c;
+	border: 2px solid #058b8c;
+}
+.btn-primary {
+	background-color: transparent;
+	color: #fff;
+	border: 2px solid #fff;
+	min-width: 89px;
+}
+.btn-primary:hover, .btn-primary:not(:disabled):not(.disabled):active:focus, .btn-primary:not(:disabled):not(.disabled):active {
+	color: #058b8c;
+	background-color: #fff;
+	border: 2px solid transparent;
+}
+
+/*
+ 2.) Homepage
+ ----------------------------------------*/
+/*------Header style start------*/
+.header .navbar {
+	padding: 40px 0 10px;
+}
+.navbar-brand {
+	width: 150px;
+	display: block;
+	margin: 0 auto;
+}
+.navbar-light .navbar-toggler {
+	padding: 0;
+	border: none;
+}
+.bar1, .bar2, .bar3 {
+	width: 30px;
+	height: 5px;
+	background-color: #058b8c;
+	margin: 4px 0;
+	transition: 0.4s;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	display: block;
+}
+.navbar-nav {
+	text-align: left;
+}
+.navbar-nav li {
+	margin-bottom: 8px;
+}
+.navbar-light .navbar-nav .nav-link:hover, .navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .show > .nav-link, .navbar-light .navbar-nav .active > .nav-link, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .nav-link.active {
+	color: #058b8c;
+}
+.navbar-light .navbar-nav .nav-link {
+	color: #828282;
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 13px;
+}
+.navbar-light .navbar-nav .nav-link .icon-down {
+	background-position: -204px -17px;
+	width: 7px;
+	height: 5px;
+	position: relative;
+	top: -2px;
+}
+.navbar-light .navbar-nav .nav-link:hover .icon-down {
+	background-position: -221px -17px;
+}
+.navbar-nav .dropdown-menu {
+	min-width: 0;
+	width: 100%;
+	background-color: rgba(130,130,130,0.5);
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	border-radius: 0;
+	
+}
+.dropdown-item {
+	white-space: normal;	
+	color: #fff;
+	-webkit-transition: all 0.3s ease ;
+	-moz-transition: all 0.3s ease ;
+	-ms-transition: all 0.3s ease ;
+	-o-transition: all 0.3s ease ;
+	transition: all 0.3s ease ;
+	font-weight: 700;
+	font-size: 13px;
+}
+.navbar-nav .dropdown-menu .dropdown-item:hover {
+	background-color: #058b8c;
+	color: #fff;
+} 
+.dropdown-toggle:after {
+	display: none;
+}
+.social-links {
+	position: absolute;
+	top: 10px;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	width: 100%;
+}
+.social-links a {
+	color: #828282;
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	-ms-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+	margin: 0 5px;
+}
+.social-links a:hover {
+	color: #058b8c;
+	text-decoration: none;
+}
+.social-links a i {
+	margin: 0 5px;
+}
+.social-links .icon-tel {
+	background-position: -47px -12px;
+	width: 9px;
+	height: 16px;
+}
+.social-links a:hover .icon-tel {
+	background-position: -101px -12px;
+}
+.social-links .icon-mail {
+	background-position: -13px -11px;
+	width: 23px;
+	height: 17px;
+}
+.social-links a:hover .icon-mail {
+	background-position: -67px -11px;
+}
+/*------Header style End------*/
+/*------Banner style Start------*/
+.banner .container-fluid {
+	padding: 0 0 0 25px;
+	position: relative;
+}
+.banner .carousel-item {
+	padding: 15px 0 0 10px;
+}
+.banner .slide-img:after {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	content: '';
+	box-shadow: inset 0 -30px 30px -30px #000, inset 0 30px 30px -30px #000;
+	z-index: 2;
+}
+.banner .carousel-item:after {
+	position: absolute;
+	top: 5px;
+	left: 0;
+	width: 150px;
+	background: url(../images/gradient-layer.jpg) no-repeat center top;
+	content: '';
+	height: 80px;
+	z-index: -1;
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+.banner img {
+	min-height: 250px;
+	object-fit: cover;
+	object-position: center;
+}
+.banner .carousel-indicators li {
+	position: relative;
+	-ms-flex: 0 1 auto;
+	flex: 0 1 auto;
+	width: 13px;
+	height: 13px;
+	margin: 0 4px;
+	text-indent: -999px;
+	cursor: pointer;
+	background-color: #058b8c;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
+	border: 2px solid transparent;
+}
+.banner .carousel-indicators .active {
+	width: 18px;
+	height: 18px;
+	background-color: transparent;
+	border: 2px solid #fff;
+}
+.banner .carousel-indicators {
+	left: auto;
+	margin: 0;
+	bottom: 15px;
+	right: 15px;
+}
+.slide-text {
+	position: absolute;
+	top: 50%;
+	left: 0;
+	width: 100%;
+	text-align: center;
+	-webkit-transform: translateY(-50%);
+	-moz-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	-o-transform: translateY(-50%);
+	transform: translateY(-50%);
+	z-index: 3;
+	padding: 50px 0;
+}
+.banner h1, .banner h2 {
+	color: #fff;
+	font-size: 18px;
+	margin-bottom: 20px;
+	text-transform: uppercase;
+}
+.banner .btn {
+	text-transform: uppercase;
+}
+.banner .social {
+	position: absolute;
+	bottom: 20px;
+	left: 3px;
+	z-index: 3;
+}
+.banner .social li {
+	margin-bottom: 3px;
+}
+.banner .social li a {
+	width: 30px;
+	height: 30px;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
+	border: 2px solid #058b8c;
+	display: inline-block;
+	position: relative;
+	background-color: #fff;
+}
+.banner .social li a i {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%,-50%);
+	-moz-transform: translate(-50%,-50%);
+	-ms-transform: translate(-50%,-50%);
+	-o-transform: translate(-50%,-50%);
+	transform: translate(-50%,-50%);
+}
+.banner .social .icon-facebook {
+	background-position: -120px -11px;
+	width: 8px;
+	height: 18px;
+}
+.banner .social .icon-linked {
+	background-position: -138px -12px;
+	width: 14px;
+	height: 15px;
+}
+.banner .social a:hover {
+	background-color: #058b8c;
+}
+.banner .social a:hover .icon-facebook {
+	background-position: -161px -11px;
+}
+.banner .social a:hover .icon-linked {
+	background-position: -178px -11px;
+}
+/*------Banner style End------*/
+/*------Body parts style End------*/
+.body-parts {
+	overflow: hidden;
+	background-color: #181818;
+	margin-top: -20px;
+	padding-top: 20px;
+}
+.body-parts .right {
+	background-color: #f4f4f4;
+	position: relative;
+}
+.body-parts .right:after, .body-parts .right:before {
+	position: absolute;
+	top: 0;
+	left: 100%;
+	width: 100vw;
+	height: 100%;
+	content: '';
+	background-color: #f4f4f4;
+}
+.body-parts .right:before {
+	left: auto;
+	right: 100%;
+}
+.body-parts a {
+	display: inline-block;
+}
+.body-parts li {
+	margin-bottom: 15px;
+	text-align: center;
+	width: 50%;
+}
+.body-parts li i {
+	margin-bottom: 5px;
+}
+.body-parts .left li a {
+	color: #fff;
+}
+.body-parts .left li a:hover , .body-parts .left .active a {
+	color: #00dac1;
+}
+.body-parts .right li a {
+	color: #181818;
+}
+.body-parts li a {
+	text-transform: uppercase;
+}
+.body-parts .left li span, .body-parts .right li span {
+	display: inline-block;
+	width: 100%;
+}
+.body-parts .icon-laparoscopic {
+	background-position: -4px -22px;
+	width: 41px;
+	height: 50px;
+}
+.body-parts a:hover .icon-laparoscopic , .body-parts .active .icon-laparoscopic {
+	background-position: -16.5px -227px;
+}
+.body-parts .icon-kings {
+	background-position: -102px -20px;
+	width: 53px;
+	height: 50px;
+}
+.body-parts a:hover .icon-kings , .body-parts .active .icon-kings {
+	background-position: -76px -230.5px;
+}
+.body-parts .icon-hemorrhoids {
+	background-position: -4.5px -84px;
+	width: 40px;
+	height: 57.5px;
+}
+.body-parts a:hover .icon-hemorrhoids , .body-parts .active .icon-hemorrhoids {
+	background-position: -147.5px -230px;
+}
+.body-parts .icon-kokytos {
+	background-position: -99.5px -84px;
+	width: 52.5px;
+	height: 53.5px;
+}
+.body-parts a:hover .icon-kokytos , .body-parts .active .icon-kokytos {
+	background-position: -216.5px -227px;
+}
+.body-parts .icon-rex {
+	background-position: -233.5px -17.5px;
+	width: 52px;
+	height: 53px;
+}
+.body-parts .icon-colon {
+	background-position: -232.5px -87.5px;
+	width: 49px;
+	height: 47.5px;
+}
+.body-parts .icon-diseases {
+	background-position: -6.5px -153.5px;
+	width: 55.5px;
+	height: 55.5px;
+}
+.body-parts .icon-thyroid {
+	background-position: -69.5px -153.5px;
+	width: 45px;
+	height: 41.5px;
+}
+.body-parts .icon-skin {
+	background-position: -124.5px -152px;
+	width: 50px;
+	height: 49.5px;
+}
+.body-parts a i {
+	-webkit-background-size: 300px 300px;
+	background-size: 300px 300px;
+	height: 58px !important;
+}
+.body-parts .left, .body-parts .right {
+	padding: 25px 0;
+}
+.body-parts .left {
+	background-color: #181818;
+}
+.body-parts ul {
+	margin: 0;
+}
+/*------Body parts style End------*/
+/*------Surgeon style Start------*/
+.surgeon-wrap {
+	overflow: hidden;
+	margin-bottom: 40px;
+}
+.surgeon-wrap ul {
+	list-style-type: disc;
+	padding: 0;
+	margin-bottom: 20px;
+	list-style-position: inside;
+}
+.surgeon-wrap h2 {
+	margin: 0;
+	font-size: 20px;
+	text-transform: uppercase;
+}
+.surgeon-wrap h2 + span {
+	display: block;
+	font-weight: 500;
+	font-size: 15px;
+	margin-bottom: 30px;
+	text-transform: uppercase;
+}
+.surgeon-area {
+	margin-bottom: 70px;
+}
+.surgeon {
+	z-index: 2;
+}
+.surgeon img {
+	width: 100%;
+}
+.surgeon:after {
+	position: absolute;
+	top: -20px;
+	height: calc(100% - 26px);
+	height: -webkit-calc(100% - 26px);
+	left: 20px;
+	width: 100%;
+	background-color: #058b8c;
+	content: '';
+	z-index: -1;
+}
+.surgeon figure {
+	margin: 0;
+}
+.surgeon .btn {
+	position: absolute;
+	background-color: #181818;
+	color: #fff;
+	text-transform: uppercase;
+	right: -10px;
+	bottom: 0;
+	padding: 10px 15px;
+}
+/*------Surgeon style End------*/
+/*------Footer style Start------*/
+
+.footer {
+	overflow: hidden;
+	padding-top: 20px;
+	position: relative;
+}
+.footer:after {
+	position: absolute;
+	top: 5px;
+	left: 0;
+	width: 150px;
+	background: url(../images/gradient-layer-footer.jpg) no-repeat center top;
+	content: '';
+	height: 68px;
+	z-index: -1;
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+.footer-area {
+	background-color: #181818;
+	position: relative;
+	padding: 25px 0;
+}
+.footer-area:after {
+	position: absolute;
+	top: 0;
+	height: 100%;
+	right: 100%;
+	width: 100vw;
+	background-color: #181818;
+	content: '';
+}
+.footer-logo {
+	width: 150px;
+	display: block;
+	margin: 0 auto 20px;
+}
+.footer-area h5 {
+	font-size: 14px;
+	color: #00dac1;
+	margin-bottom: 15px;
+	font-weight: 500;
+}
+.footer-area a {
+	color: #fff;
+	-webkit-transition: all 0.3s ease ;
+	-moz-transition: all 0.3s ease ;
+	-ms-transition: all 0.3s ease ;
+	-o-transition: all 0.3s ease ;
+	transition: all 0.3s ease ;
+}
+.footer-area a:hover {
+	color: #00dac1;
+	text-decoration: none;
+}
+.footer-area address {
+	color: #fff;
+}
+.footer-area .services-list {
+	margin-bottom: 25px;
+}
+.footer .email {
+	color: #00dac1;
+	display: inline-block;
+	font-size: 16px;
+	letter-spacing: 2px;
+	font-weight: 500;
+}
+.footer .copyright {
+	padding: 75px 0 20px;
+	position: relative;
+}
+.footer .copyright span {
+	color: #9b9b9b;
+	width: 50%;
+	letter-spacing: 0.3px;
+}
+.footer .copyright span a {
+	color: #181818;
+	-webkit-transition: all 0.3s ease ;
+	-moz-transition: all 0.3s ease ;
+	-ms-transition: all 0.3s ease ;
+	-o-transition: all 0.3s ease ;
+	transition: all 0.3s ease ;
+}
+.footer .copyright span a:hover {
+	color: #058b8c;
+}
+.footer-social {
+	background-color:#058b8c;
+	position: absolute;
+	top: -20px;
+	right: 0;
+	padding: 25px 10px 20px;
+}
+.footer-social:after {
+	position: absolute;
+	top: -30px;
+	height: calc(100% + 30px);
+	height: -webkit-calc(100% + 30px);
+	left: 100%;
+	width: 100vw;
+	background-color: #058b8c;
+	content: '';
+}
+.footer-social ul {
+	margin: 0;
+}
+.footer-social li {
+	display: inline-block;
+	margin: 0 5px;
+}
+.footer-social  li a {
+	width: 30px;
+	height: 30px;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
+	border: 2px solid #fff;
+	display: inline-block;
+	position: relative;
+	background-color: transparent;
+}
+.footer-social li a i {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%,-50%);
+	-moz-transform: translate(-50%,-50%);
+	-ms-transform: translate(-50%,-50%);
+	-o-transform: translate(-50%,-50%);
+	transform: translate(-50%,-50%);
+}
+.footer-social .icon-facebook {
+	background-position: -161px -11px;
+	width: 8px;
+	height: 18px;
+}
+.footer-social .icon-linked {
+	background-position: -178px -11px;
+	width: 14px;
+	height: 15px;
+}
+.footer-social li a:hover {
+	background-color: #fff;
+}
+.footer-social a:hover .icon-facebook {
+	background-position: -120px -11px;
+}
+.footer-social a:hover .icon-linked {
+	background-position: -138px -12px;
+}
+/*------Footer style End------*/
+
+/*
+ 3.)  Hemorrhoids
+ ===============================================*/
+/*------banner style start--------*/
+.hemorrhoids-banner h1 {
+	margin: 0;
+}
+.hemorrhoids-banner .slide-text {
+    top: 53.3%;
+}
+/*------banner style end--------*/
+/*------Info style start--------*/
+.info-wrap h2 , .info-wrap h3{
+	font-size: 20px;
+	font-weight: 700;
+}
+.info-wrap h3 {
+	font-size: 14px;
+}
+.info-wrap p span , .info-wrap span span {
+	font-weight: 700;
+}
+.info-wrap p , .info-wrap h3 , .info-wrap li , .info-wrap span {
+	text-align: justify;
+}
+.info-wrap ul {
+	list-style: none;
+	padding: 0;
+}
+.info-wrap .surgeon {
+	margin-bottom: 30px;
+}
+.info-wrap .surgeon img {
+	width: auto;
+}
+.info-wrap .info-detail {
+	float: left;
+	width: 100%;
+}
+
+
+/*------Info style end--------*/

@@ -1,0 +1,670 @@
+/*
+ Table Of Contents
+ 1.) Media Query for medium Device
+ 2.) Media Query for Tablet
+ 3.) Media Query for medium desktop
+ 4.) Media Query for large mobile
+ 5.) Media Query for Handheld Devices
+ ===============================================*/
+
+/*
+ 1.) Media Query for medium Device
+ ===============================*/
+@media screen and (min-width: 576px) {
+
+	.banner .container-fluid {
+		padding: 0 0 0 45px;
+	}
+	.banner .social {
+		left: 8px;
+	}
+	.info-wrap .surgeon:after {
+		width: 100%;
+	}
+}
+
+/*
+ 2.) Media Query for Tablet
+ ===============================*/
+/*------------------Tablet css -----------*/
+@media screen and (min-width: 768px) {
+
+	.header .navbar {
+		padding: 10px 0 40px;
+	}
+	.social-links {
+		position: static;
+		width: auto;
+		margin: 0;
+	}
+	.social-links ul {
+		margin: 0;
+	}
+	.navbar-collapse {
+		order: 2;
+	}
+	.navbar-nav {
+		-ms-flex-direction: row;
+		flex-direction: row;
+	}
+	.navbar-nav li {
+		margin-right: 15px;
+	}
+	.navbar-nav .dropdown-menu {
+		position: absolute;
+		width: auto;
+		min-width: 294px;
+		-webkit-box-shadow: 5px 5px 10px 0px rgba(130,130,130,0.5);
+		-moz-box-shadow: 5px 5px 10px 0px rgba(130,130,130,0.5);
+		box-shadow: 5px 5px 10px 0px rgba(130,130,130,0.5);
+		border: none;
+		margin: 0;
+		left: -6px;
+		padding: 0;
+	}
+	.dropdown-item {
+		padding: 2px 14px;
+		letter-spacing: 0.6px;
+	}
+	.navbar-light .navbar-nav .nav-link {
+		padding-bottom: 0;
+	}
+	.banner .social {
+		bottom: 50px;
+	}
+	.banner .carousel-item:after {
+		width: 220px;
+		height: 100px;
+		-webkit-background-size: cover;
+		background-size: cover;
+		top: 0;
+	}
+	.banner .carousel-item {
+		padding: 20px 0 0 20px;
+	}
+	.banner h1, .banner h2 {
+		font-size: 30px;
+		margin-bottom: 25px;
+	}
+	.banner .btn {
+		font-size: 18px;
+	}
+	.banner .slide-img::after {
+		box-shadow: inset 0 -40px 40px -40px #000, inset 0 40px 40px -40px #000;
+		z-index: 2;
+	}
+	.body-parts {
+		margin-top: -40px;
+		padding-top: 40px;
+		margin-bottom: 40px;
+	}
+	.body-parts .right:before {
+		background-color: #181818;
+		height: 20px;
+		top: auto;
+		bottom: 100%;
+	}
+	.body-parts .left {
+		background-color: #181818;
+	}
+	.surgeon-area {
+		margin: 0;
+		position: relative;
+	}
+	.surgeon-area:after {
+		position: absolute;
+		top: 50px;
+		right: calc(100% + 10px);
+		right: -webkit-calc(100% + 10px);
+		width: 100vw;
+		background: url(../images/gradient-layer-middle.jpg) repeat top right;
+		content: '';
+		height: 856px;
+		z-index: 1;
+	}
+	.surgeon:after {
+		width: 100vw;
+	}
+	.surgeon-wrap {
+		margin-bottom: 50px;
+	}
+	.surgeon {
+		padding-top: 20px;
+		margin-top: 88px;
+	}
+	.surgeon-wrap h2 {
+		font-size: 30px;
+	}
+	.surgeon-wrap h2 + span {
+		font-size: 18px;
+	}
+	.footer:after {
+		width: 220px;
+		top: 0;
+	}
+	.footer-logo {
+		width: 150px;
+		display: inline-block;
+		margin: 0;
+	}
+	.services {
+		width: calc(100% - 180px);
+		width: -webkit-calc(100% - 180px);
+	}
+	.footer-area .services-list {
+		margin: 0;
+	}
+	.footer .copyright {
+		padding: 20px 0 20px;
+	}
+	.info-wrap .surgeon {
+		margin-bottom: 30px;
+		margin-top: 35px;
+		padding: 0;
+	}
+
+}
+
+/*
+ 3.) Media Query for medium desktop
+ ========================================*/
+@media screen and (min-width: 992px) {
+
+	.navbar-expand-lg .navbar-toggler {
+		display: block;
+	}
+	.navbar-expand-lg {
+		-ms-flex-wrap: wrap;
+		flex-wrap: wrap;
+	}
+	.navbar-expand-lg .navbar-collapse {
+		flex-basis: 100%;
+	}
+	.banner h1, .banner h2 {
+		font-size: 40px;
+		margin-bottom: 30px;
+	}
+	.body-parts li {
+		width: 25%;
+	}
+	.body-parts .right li {
+		width: calc(100%/5);
+		width: -webkit-calc(100%/5);
+	}
+	.surgeon-area {
+		padding-left: 50px;
+	}
+	.services {
+		width: calc(100% - 230px);
+		width: -webkit-calc(100% - 230px);
+		padding-right: 50px;
+	}
+	.footer-area .services-list ul {
+		margin: 0;
+	}
+	.footer-social {
+		width: 200px;
+	}
+	.info-wrap .surgeon-area, .info-wrap .info-detail {
+		padding-left: 50px;
+	}
+}
+/*
+ 4.) Media Query for large desktop
+ =========================================*/
+@media screen and (min-width: 1200px) {
+	.container {
+		max-width: 1140px;
+	}
+	.navbar-brand {
+		width: 180px;
+	}
+	.social-links a {
+		font-size: 15px;
+	}
+	.banner h1, .banner h2 {
+		font-size: 48px;
+	}
+	.banner .carousel-item:after {
+		width: 300px;
+		height: 138px;
+	}
+	.body-parts {
+		margin-bottom: 60px;
+	}
+	.body-parts .left {
+		width: 44%;
+	}
+	.body-parts .right {
+		width: 56%;
+	}
+	.surgeon-wrap h2 {
+		font-size: 38px;
+	}
+	.surgeon-wrap h2 + span {
+		font-size: 26px;
+	}
+	.surgeon {
+		padding-top: 20px;
+		margin-top: 130px;
+	}
+	.surgeon:after {
+		width: calc(100% + 20px);
+		width: -webkit-calc(100% + 20px);
+	}
+	.surgeon-area p {
+		font-size: 16px;
+	}
+	.surgeon-area li {
+		font-size: 16px;
+	}
+	.surgeon-wrap {
+		margin-bottom: 70px;
+		padding-bottom: 20px;
+	}
+	.footer-area {
+		padding: 25px 0 25px 50px;
+	}
+	.footer .copyright {
+		padding: 20px 0 19px 50px;
+	}
+	.footer-social {
+		padding: 25px 25px 20px;
+	}
+	.footer .copyright span {
+		font-size: 13px;
+	}
+
+	.info-wrap p, .info-wrap span, .info-wrap h3, .info-wrap li {
+		font-size: 16px;
+	}
+	.info-wrap {
+		margin-bottom: 30px;
+	}
+	.info-wrap .surgeon-area {
+		padding-right: 75px;
+	}
+
+}
+/*
+ 5.) Media Query for Handheld Devices
+ =========================================*/
+@media screen and (min-width: 1600px) {
+	.container {
+		max-width: 1550px;
+	}
+	.header .container {
+		padding: 0;
+	}
+	.header .navbar {
+		padding: 36px 0 59px;
+	}
+	.navbar-brand {
+		width: auto;
+		position: relative;
+		left: 111px;
+	}
+	.social-links {
+		margin-right: 0px;
+	}
+	.navbar-light .navbar-toggler {
+		margin: 9px 0 0 0;
+	}
+	.navbar-expand-lg .navbar-collapse {
+		position: absolute;
+		top: 37%;
+		left: 71px;
+	}
+	.navbar-nav li {
+		margin-right: 6px;
+	}
+	.banner .carousel-item {
+		padding: 31px 0 0 33px;
+	}
+	.banner .container-fluid {
+		padding: 0 0 0 127px;
+	}
+	.banner .social li a {
+		width: 40px;
+		height: 40px;
+	}
+	.banner .social li {
+		margin-bottom: 10px;
+	}
+	.banner .social {
+		left: 60px;
+		bottom: 20.4%;
+	}
+	.slide-text {
+		top: 48.3%;
+	}
+	.banner h1, .banner h2 {
+		letter-spacing: 8px;
+	}
+	.banner .btn {
+		font-size: 18px;
+		padding: 17px 17px;
+		min-width: 339px;
+		letter-spacing: 5px;
+	}
+	.banner .carousel-indicators {
+		bottom: 36px;
+		right: 47px;
+	}
+	.banner .carousel-indicators li {
+		width: 15px;
+		height: 15px;
+		margin: 0 15px;
+	}
+	.banner .carousel-indicators .active {
+		width: 26px;
+		height: 26px;
+	}
+	.banner .slide-img:after {
+		box-shadow: inset 0 -100px 100px -100px #000, inset 0 100px 100px -100px #000;
+		z-index: 2;
+	}
+	.body-parts {
+		margin-top: -84px;
+		padding-top: 84px;
+		margin-bottom: 96px;
+	}
+	.body-parts .container {
+		padding: 0;
+	}
+	.body-parts .right:before {
+		height: 47px;
+	}
+	.body-parts .left {
+		width: 44%;
+	}
+	.body-parts .right {
+		width: 56%;
+	}
+	.surgeon-wrap .container {
+		padding: 0;
+	}
+	.surgeon-area {
+		padding-left: 241px;
+	}
+	.surgeon-wrap h2 {
+		font-size: 38px;
+		letter-spacing: 3.4px;
+	}
+	.surgeon-wrap h2 + span {
+		line-height: 1;
+		margin-bottom: 44px;
+	}
+	.surgeon-area li {
+		font-size: 18px;
+		margin-bottom: 2px;
+	}
+	.surgeon-area p {
+		font-size: 18px;
+		margin-bottom: 2px;
+	}
+	.surgeon-wrap .btn {
+		padding: 24px;
+		min-width: 230px;
+	}
+	.surgeon {
+		padding-top: 58px;
+		margin-top: 143px;
+	}
+	.surgeon:after {
+		left: 50px;
+		height: calc(100% - 59px);
+		height: -webkit-calc(100% - 59px);
+	}
+	.surgeon .btn {
+		min-width: 250px;
+		font-size: 19px;
+		right: -19px;
+	}
+	.surgeon-wrap {
+		margin-bottom: 93px;
+	}
+	.surgeon-area:after {
+		right: calc(100% - 79px);
+		right: -webkit-calc(100% - 79px);
+	}
+	.footer {
+		padding-top: 42px;
+	}
+	.footer:after {
+		width: 430px;
+	}
+	.footer-area {
+		padding: 50px 104px 30px 241px;
+	}
+	.footer-logo {
+		width: auto;
+	}
+	.footer .copyright {
+		padding: 20px 0 15px 241px;
+	}
+	.services {
+		width: calc(100% - 473px);
+		width: -webkit-calc(100% - 473px);
+		padding-right: 50px;
+		margin-top: -6px;
+	}
+	.footer-area .services-list li {
+		margin-bottom: 5px;
+	}
+	.footer-area .services-list li:last-child {
+		margin: 0;
+	}
+	.footer-area address {
+		line-height: 1.8;
+	}
+	.footer-social {
+		padding: 32px 54px 20px;
+		top: -40px;
+		width: 300px;
+	}
+	.footer-social li a {
+		width: 40px;
+		height: 40px;
+	}
+	.footer-social:after {
+		top: -40px;
+		height: calc(100% + 40px);
+		height: -webkit-calc(100% + 40px);
+	}
+	.hemorrhoids-banner .slide-text {
+		top: 53.3%;
+	}
+	.info-wrap .surgeon-area {
+		padding-left: 241px;
+		padding-right: 50px;
+	}
+	.info-wrap p, .info-wrap span, .info-wrap h3, .info-wrap li {
+		font-size: 16px;
+		line-height: 1.3;
+	}
+	.info-wrap .info-area h2 + p {
+		font-size: 18px;
+		letter-spacing: 0.3px;
+	}
+	.info-wrap li {
+		line-height: 1.4;
+		margin-bottom: 1px;
+	}
+	.info-area p {
+		margin-bottom: 30px;
+	}
+	.info-area h3 {
+		margin-bottom: 3px;
+		font-size: 18px;
+	}
+	.info-wrap .info-detail {
+		padding-left: 0;
+	}
+	.info-wrap .surgeon {
+		margin-bottom: 60px;
+		margin-top: 40px;
+	}
+	.info-wrap .surgeon:after {
+		top: -40px;
+		left: 40px;
+	}
+	.info-wrap .description {
+		padding-left: 24px;
+	}
+	.info-wrap .description li p {
+		margin-bottom: 5px;
+	}
+	.info-wrap {
+		margin-bottom: 40px;
+	}
+}
+
+@media screen and (min-width: 1800px) {
+	.container {
+		max-width: 1761px;
+	}
+	.social-links {
+		margin-right: -25px;
+	}
+	.navbar-light .navbar-toggler {
+		margin: 9px 0 0 -15px;
+	}
+	.navbar-nav li {
+		margin-right: 12px;
+	}
+	.body-parts .left, .body-parts .right {
+		padding: 25px 0 7px;
+	}
+	.body-parts .right li {
+		width: calc(100%/5 - 5px);
+		width: -webkit-calc(100%/5 - 5px);
+	}
+	.body-parts li a {
+		font-size: 17px;
+		letter-spacing: 2px;
+	}
+	.body-parts .icon-laparoscopic {
+		background-position: -8px -44px;
+		width: 82px;
+		height: 100px;
+	}
+	.body-parts a:hover .icon-laparoscopic , .body-parts .active .icon-laparoscopic{
+		background-position: -33px -454px;
+	}
+	.body-parts .icon-kings {
+		background-position: -204px -40px;
+		width: 106px;
+		height: 100px;
+	}
+	.body-parts a:hover .icon-kings , .body-parts .active .icon-kings {
+		background-position: -152px -461px;
+	}
+	.body-parts .icon-hemorrhoids {
+		background-position: -9px -168px;
+		width: 80px;
+		height: 115px;
+	}
+	.body-parts a:hover .icon-hemorrhoids , .body-parts .active .icon-hemorrhoids {
+		background-position:  -295px -460px;
+	}
+	.body-parts .icon-kokytos {
+		background-position: -199px -168px;
+		width: 105px;
+		height: 107px;
+	}
+	.body-parts a:hover .icon-kokytos  , .body-parts .active .icon-kokytos {
+		background-position: -433px -454px;
+	}
+	.body-parts .icon-rex {
+		background-position: -467px -35px;
+		width: 104px;
+		height: 106px;
+	}
+	.body-parts .icon-colon {
+		background-position: -465px -175px;
+		width: 98px;
+		height: 95px;
+	}
+	.body-parts .icon-diseases {
+		background-position: -13px -307px;
+		width: 111px;
+		height: 111px;
+	}
+	.body-parts .icon-thyroid {
+		background-position: -139px -307px;
+		width: 90px;
+		height: 93px;
+	}
+	.body-parts .icon-skin {
+		background-position: -249px -304px;
+		width: 100px;
+		height: 99px;
+	}
+	.body-parts a i {
+		-webkit-background-size: 600px 600px;
+		background-size: 600px 600px;
+		height: 115px !important;
+	}
+	.surgeon-area {
+		padding-left: 256px;
+	}
+	
+	.surgeon:after {
+		left: 79px;
+		height: calc(100% - 59px);
+		height: -webkit-calc(100% - 59px);
+	}
+	.surgeon-area:after {
+		right: calc(100% - 79px);
+		right: -webkit-calc(100% - 79px);
+	}
+	
+	.footer:after {
+		width: 530px;
+	}
+	.footer-area {
+		padding: 50px 104px 30px 241px;
+	}
+	.footer-logo {
+		width: auto;
+	}
+	.footer .copyright {
+		padding: 20px 0 15px 241px;
+	}
+	.services {
+		width: calc(100% - 473px);
+		width: -webkit-calc(100% - 473px);
+		padding-right: 50px;
+	}
+	.footer-social {
+		padding: 32px 54px 20px;
+		top: -40px;
+		width: 377px;
+	}
+	.footer-social li a {
+		width: 40px;
+		height: 40px;
+	}
+	.info-area {
+		width: 930px;
+	}
+	.info-wrap .surgeon-area {
+		padding-left: 256px;
+		padding-right: 0;
+	}
+	.info-wrap .surgeon {
+		margin-bottom: 40px;
+		margin-top: 68px;
+	}
+	.info-wrap .surgeon:after {
+		top: -68px;
+		left: 68px;
+		width: 100%;
+	}
+	.info-wrap .surgeon img {
+		width: 100%;
+	}
+
+}
+
